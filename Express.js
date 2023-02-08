@@ -41,3 +41,23 @@ app.get("/contact",(req,res)=>{
 app.listen(port,()=>{
     console.log(`listinig to the port no ${port}`)
 })
+
+
+//serving api response and serving html and json
+app.get("/temp",(req,res)=>{
+   res.send([{
+    id: 1,
+    name: "vinod"
+   },
+   {
+    id: 1,
+    name: "vinod"
+   },
+   {
+    id: 1,
+    name: "vinod"
+   }]);
+})
+
+
+
